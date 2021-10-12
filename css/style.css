@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Gentium+Book+Basic:ital@1&display=swap');
+
+
+*{
+    box-sizing: border-box;
+}
+
+:root {
+    --primary: #ffffff;
+    --secondary:#f5facb;
+    --yellow:#e7c60c;
+    --black: #000000;
+    --black-lg:#4745453b;
+    --width-break:600px;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Gentium Book Basic', serif;
+    color: var(--primary);
+    background-color: var(--black);
+    background-image: url('../bg.jpg');
+    background-size: cover;
+}
+
+/*Nav Bar */
+.nav {
+    background-color: var(--black-lg);
+    padding: 0.5rem 0.5rem;
+}
+
+.nav .active-link {
+    font-weight: bolder;
+}
+.nav .brand {
+    font-weight: bolder;
+    font-size: 40px;
+    color: var(--yellow);
+}
+
+.nav ul{
+    text-align: right;
+    color: var(--yellow);
+}
+.nav li {
+    display: inline;
+    padding: 0rem 0.5rem;
+}
+
+.heading{
+    margin-top: 20px;
+    padding: 2rem;
+    text-align: center;
+    
+}
+
+.about-heading{
+    color: var(--yellow);
+}
+.hero {
+    max-width: 470px;
+    max-height: 400px;
+    margin: auto;
+    display: block;
+}
+
+main{
+    margin: auto;
+    padding: 1.5rem;
+    max-width: var(--width-break);
+}
+
+textarea{
+    box-sizing: border-box;
+    display: block;
+    background-color: var(--secondary);
+    width:100%;
+    min-height: 30vh;
+    margin-top: 2rem;
+    font-size: large;
+    font-family: inherit;
+    outline: none;
+}
+
+.btn-primary{
+    border: none;
+    outline: none;
+    padding: 0.5rem 0.8rem;
+    border-radius: 3px;
+    margin: 0rem 1rem 1rem 0rem;
+    font-size: large;
+    font-family: inherit;
+    background-color: var(--yellow);
+}
+
+#tt-output{
+    box-sizing: border-box;
+    width: 100%;
+    padding: 1rem;
+    min-height: 30vh;
+    margin-top: 2rem;
+    font-size: large;
+    overflow:scroll;
+    scroll-behavior: smooth;
+    color: var(--black);
+    outline: none;
+    background-color: var(--secondary);
+}
+
+footer {
+    text-align: center; 
+}
+
+footer li {
+    list-style: none;
+    padding: 0.5rem;
+    display: inline;  
+}
+
+footer p,a{   
+    position: left;   
+    text-decoration: none;
+    color: var(--yellow);
+}
